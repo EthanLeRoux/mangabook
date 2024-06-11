@@ -1,9 +1,9 @@
 <?php
 
 $dbServer = "localhost";
-$dbUser = "id22303786_root";
-$dbPass = "Hentai@123";
-$dbName = "id22303786_dbmanga";
+$dbUser = "root";
+$dbPass = "root";
+$dbName = "dbmanga";
 $conn = "";
 
 try{
