@@ -1,9 +1,9 @@
 <?php
 
 $dbServer = "localhost";
-$dbUser = "root";
-$dbPass = "root";
-$dbName = "dbmanga";
+$dbUser = "id22303786_root";
+$dbPass = "Hentai@123";
+$dbName = "id22303786_dbmanga";
 $conn = "";
 
 try{
@@ -36,12 +36,12 @@ if($conn){
 
     <div class="table">
         <?php
-            if(isset($_GET['submit'])){
-                $title = $_GET['title'];
-                $author = $_GET['author'];
-                $synopsis = $_GET['synopsis'];
-                $genre = $_GET['genre'];
-                $cover = $_GET['cover'];
+            if(isset($_POST['submit'])){
+                $title = $_POST['title'];
+                $author = $_POST['author'];
+                $synopsis = $_POST['synopsis'];
+                $genre = $_POST['genre'];
+                $cover = $_POST['cover'];
 
                 $sqlInsert = "INSERT INTO tblManga (title, author, synopsis, genre, cover) VALUES ('$title', '$author', '$synopsis', '$genre', '$cover')";
                 mysqli_query($conn,$sqlInsert);

@@ -13,7 +13,7 @@
                 include('navigation.php');
     ?>
 
-    <form action="index.php" method="get">
+    <form action="index.php" method="post">
 
         <label for="title">Title</label>
             <input type="text" name="title" required>
